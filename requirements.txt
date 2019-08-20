@@ -1,2 +1,7 @@
-django<2.13
+django-jenkins
+pylint
+pep8
+pyflakes
+coverage
+django<2.3
 django-rest-framework

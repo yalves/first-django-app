@@ -1,3 +1,8 @@
+""" Admin functions of a DRF tutorial
+
+Author: yalves
+Date: 13-08-2019
+"""
 from django.contrib import admin
 from .models import Question, Choice
 
@@ -9,7 +14,7 @@ class ChoiceInline(admin.TabularInline):
 
 class QuestionAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None,               {'fields': ['question_text']}),
+        (None, {'fields': ['question_text']}),
         ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),
     ]
     inlines = [ChoiceInline]
