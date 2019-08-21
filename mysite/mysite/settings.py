@@ -47,6 +47,10 @@ INSTALLED_APPS = [
     'django_jenkins',
 ]
 
+PROJECT_APPS = [
+    'polls',
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
